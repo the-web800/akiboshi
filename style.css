@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.download {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5%;
+    border: 2px solid;
+}
+
+.sn {
+    text-decoration: none;
+    color: #000;
+}
+
+.download:hover {
+    background-color: #CCC;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+.pc {
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    text-align: center;
+}
+
+img {
+    width: 80%;
+}
+
+ul.nv {
+    padding: 0;
+    text-align: center;
+    
+}
+
+ul.nv li {
+    display: inline-block;
+}
+
+
+ul.nv li a {
+    display: block;
+    padding: 1em;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.nv a::first-line {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul.nv li:hover {
+    background: #DDD;
+}
+
+.sp {
+    width: 100%;
+    padding: 0 2%;
+    justify-content: space-between;
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .pc {
+       display: none;
+    }
+    .sp {
+        display: flex;
+    }
+ }
+
+
+ .sp-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    display: block;
+    background: rgba(250, 250, 250, .95);
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    border-left: 1px solid #888;
+    transform: translateX(100%);
+ }
+
+ .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+ .sp-nav li {
+    margin: 0;
+    width: 100%;
+    margin-top: 1px;
+    background-color: rgba(240, 240, 240, .95);
+    padding: 0;
+    list-style: none;
+    text-align: center;
+ }
+ .sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+ }
+ .toggle {
+    transform: translateX( 0 );
+    opacity: 1;
+ }
+ #menu {
+    z-index: 2;
+    width: 5.3em;
+    border-radius: 10%;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    color: #fff;
+ }
+ .sp h1 {
+    font-size: 1.1em;
+ }
+
+ .sp-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+ }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あきぼし高速鉄道</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+           const hum = $('#menu')
+           const nav = $('.sp-nav')
+           hum.on('click', function(){
+              nav.toggleClass('toggle');
+              if (hum[0].innerText === 'Close') {
+                hum[0].innerText = 'Menu';
+              } else {
+                hum[0].innerText = 'Close';
+              }
+           });
+        });
+    </script>
+</head>
+<body style="text-align: center;">
+    <div class="pc">
+        <a href="index.html" class="sn"><h1>あきぼし高速鉄道</h1></a>
+        <nav class="pc-nav">
+            <ul class="nv">
+                <li><a href="comingsoon.html">会社概要</a></li>
+                <li><a href="route.html">路線図・駅情報</a></li>
+                <li><a href="comingsoon.html">時刻表</a></li>
+                <li><a href="comingsoon.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sp">
+        <a href="index.html" class="sn"><h1>あきぼし高速鉄道</h1></a>
+        <nav class="sp-nav">
+            <ul>
+               <li><a href="comingsoon.html">会社概要</a></li>
+               <li><a href="route.html">路線図・駅情報</a></li>
+               <li><a href="comingsoon.html">時刻表</a></li>
+               <li><a href="comingsoon.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        <button id="menu">Menu</button>
+    </div>
+    <h1>駅情報</h1>
+    <a href="#" class="link">夏島本線</a>
+    <a href="#" class="link">空港線</a>
+    <a href="#" class="link">学園都市線</a>
+    <a href="#" class="link">宮津線</a>
+    <a href="#" class="link">櫻川線</a>
+
+    <h2>夏島本線</h2>
+    <a href=""></a>
+    <p>クリックすると時刻表などの駅情報が表示されます。</p>
+
+    <a class="download" href="route.jpeg" download>路線図をダウンロード(jpeg:約538KB)</a>
+    <footer>
+        <p>&copy; 2024 あきぼし高速鉄道. All rights reserved.</p>
+    </footer>
+</body>
+</html>

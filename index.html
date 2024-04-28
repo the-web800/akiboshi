@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あきぼし高速鉄道</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+           const hum = $('#menu')
+           const nav = $('.sp-nav')
+           hum.on('click', function(){
+              nav.toggleClass('toggle');
+              if (hum[0].innerText === 'Close') {
+                hum[0].innerText = 'Menu';
+              } else {
+                hum[0].innerText = 'Close';
+              }
+           });
+        });
+    </script>
+</head>
+<body>
+    <div class="pc">
+        <a href="index.html" class="sn"><h1>あきぼし高速鉄道</h1></a>
+        <nav class="pc-nav">
+            <ul class="nv">
+                <li><a href="comingsoon.html">会社概要</a></li>
+                <li><a href="route.html">路線図・駅情報</a></li>
+                <li><a href="comingsoon.html">時刻表</a></li>
+                <li><a href="comingsoon.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sp">
+        <a href="index.html" class="sn"><h1>あきぼし高速鉄道</h1></a>
+        <nav class="sp-nav">
+            <ul>
+                <li><a href="comingsoon.html">会社概要</a></li>
+                <li><a href="route.html">路線図・駅情報</a></li>
+                <li><a href="comingsoon.html">時刻表</a></li>
+                <li><a href="comingsoon.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        <button id="menu">Menu</button>
+    </div>
+    <div class="img">
+        <!--ここに最新情報などの画像をおく。-->
+        <a href="route.html">
+        <img src="route.jpeg" alt="路線図">
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 あきぼし高速鉄道. All rights reserved.</p>
+    </footer>
+</body>
+</html>
